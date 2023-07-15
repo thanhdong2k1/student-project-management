@@ -3,7 +3,7 @@ import axios from "axios";
 const notifyApi = {
   getAll: () => {
     try {
-      const response = axios.get("http://phuongnamdts:5000/api/kiemtra_thongbao");
+      const response = axios.get("http://phuongnamdts.com:5000/api/kiemtra_thongbao");
       return response;
     } catch (error) {
       //   // console.log(error);
@@ -12,7 +12,7 @@ const notifyApi = {
   post: ({ name, startDay, endDay }) => {
     try {
       const response = axios.post(
-        "http://phuongnamdts:5000/api/kiemtra_thongbao",
+        "http://phuongnamdts.com:5000/api/kiemtra_thongbao",
         {
           name: name,
           startDay: startDay,
@@ -27,7 +27,7 @@ const notifyApi = {
   delete: async ({ id }) => {
     try {
       const response = await axios.delete(
-        `http://phuongnamdts:5000/api/kiemtra_thongbao/${id}`
+        `http://phuongnamdts.com:5000/api/kiemtra_thongbao/${id}`
       );
       return response;
     } catch (error) {
@@ -37,7 +37,7 @@ const notifyApi = {
   get: ({ id }) => {
     try {
       const response = axios.get(
-        `http://phuongnamdts:5000/api/kiemtra_thongbao/${id}`
+        `http://phuongnamdts.com:5000/api/kiemtra_thongbao/${id}`
       );
       return response;
     } catch (error) {
@@ -47,7 +47,7 @@ const notifyApi = {
   put: ({ name, notify}) => {
     try {
       const response = axios.put(
-        `http://phuongnamdts:5000/api/kiemtra_thongbao/${name}`,
+        `http://phuongnamdts.com:5000/api/kiemtra_thongbao/${name}`,
         {
           notify: notify,
         }

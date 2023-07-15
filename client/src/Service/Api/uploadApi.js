@@ -3,7 +3,7 @@ import axios from "axios";
 const uploadApi = {
   post: (formData) => {
     try {
-      const response = axios.post("http://phuongnamdts:5000/upload", formData);
+      const response = axios.post("http://phuongnamdts.com:5000/upload", formData);
       return response;
     } catch (error) {
       throw new Error("Lỗi khi tải dữ liệu user");
@@ -12,7 +12,7 @@ const uploadApi = {
   // delete: async ({ id }) => {
   //   try {
   //     const response = await axios.delete(
-  //       `http://phuongnamdts:5000/api/sinhvien/${id}`
+  //       `http://phuongnamdts.com:5000/api/sinhvien/${id}`
   //     );
   //     return response;
   //   } catch (error) {
@@ -21,7 +21,7 @@ const uploadApi = {
   // },
   // get: ({ id }) => {
   //   try {
-  //     const response = axios.get(`http://phuongnamdts:5000/api/sinhvien/${id}`);
+  //     const response = axios.get(`http://phuongnamdts.com:5000/api/sinhvien/${id}`);
   //     return response;
   //   } catch (error) {
   //     throw new Error("Lỗi khi tải dữ liệu user");
@@ -38,7 +38,7 @@ const uploadApi = {
   //   id,
   // }) => {
   //   try {
-  //     const response = axios.put(`http://phuongnamdts:5000/api/sinhvien/${id}`, {
+  //     const response = axios.put(`http://phuongnamdts.com:5000/api/sinhvien/${id}`, {
   //       name: name,
   //       gender: gender,
   //       yearOfBirth: yearOfBirth,

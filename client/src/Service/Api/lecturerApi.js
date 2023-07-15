@@ -3,7 +3,7 @@ import axios from "axios";
 const lecturerApi = {
   getAll: () => {
     try {
-      const response = axios.get("http://phuongnamdts:5000/api/giangvien");
+      const response = axios.get("http://phuongnamdts.com:5000/api/giangvien");
       return response;
     } catch (error) {
       //   // console.log(error);
@@ -11,7 +11,7 @@ const lecturerApi = {
   },
   post: ({ name, gender, email, phone, industry }) => {
     try {
-      const response = axios.post("http://phuongnamdts:5000/api/giangvien", {
+      const response = axios.post("http://phuongnamdts.com:5000/api/giangvien", {
         name: name,
         gender: gender,
         email: email,
@@ -26,7 +26,7 @@ const lecturerApi = {
   delete: async ({ id }) => {
     try {
       const response = await axios.delete(
-        `http://phuongnamdts:5000/api/giangvien/${id}`
+        `http://phuongnamdts.com:5000/api/giangvien/${id}`
       );
       return response;
     } catch (error) {
@@ -35,7 +35,7 @@ const lecturerApi = {
   },
   get: ({ id }) => {
     try {
-      const response = axios.get(`http://phuongnamdts:5000/api/giangvien/${id}`);
+      const response = axios.get(`http://phuongnamdts.com:5000/api/giangvien/${id}`);
       return response;
     } catch (error) {
       throw new Error("Lỗi khi tải dữ liệu user");
@@ -43,7 +43,7 @@ const lecturerApi = {
   },
   put: ({ name, gender, email, phone, industry, id }) => {
     try {
-      const response = axios.put(`http://phuongnamdts:5000/api/giangvien/${id}`, {
+      const response = axios.put(`http://phuongnamdts.com:5000/api/giangvien/${id}`, {
         name: name,
         gender: gender,
         email: email,
