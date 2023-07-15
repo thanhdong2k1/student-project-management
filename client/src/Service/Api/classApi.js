@@ -3,7 +3,7 @@ import axios from "axios";
 const classApi = {
   getAll: () => {
     try {
-      const response = axios.get("http://localhost:5000/api/lop");
+      const response = axios.get("http://phuongnamdts:5000/api/lop");
       return response;
     } catch (error) {
       //   // console.log(error);
@@ -11,7 +11,7 @@ const classApi = {
   },
   post: ({ name, quantity, branch, course }) => {
     try {
-      const response = axios.post("http://localhost:5000/api/lop", {
+      const response = axios.post("http://phuongnamdts:5000/api/lop", {
         name: name,
         quantity: quantity,
         branch: branch,
@@ -25,7 +25,7 @@ const classApi = {
   delete: async ({ id }) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/lop/${id}`
+        `http://phuongnamdts:5000/api/lop/${id}`
       );
       return response;
     } catch (error) {
@@ -34,7 +34,7 @@ const classApi = {
   },
   get: ({ id }) => {
     try {
-      const response = axios.get(`http://localhost:5000/api/lop/${id}`);
+      const response = axios.get(`http://phuongnamdts:5000/api/lop/${id}`);
       return response;
     } catch (error) {
       throw new Error("Lỗi khi tải dữ liệu user");
@@ -42,7 +42,7 @@ const classApi = {
   },
   put: ({ name, quantity, branch, course, id }) => {
     try {
-      const response = axios.put(`http://localhost:5000/api/lop/${id}`, {
+      const response = axios.put(`http://phuongnamdts:5000/api/lop/${id}`, {
         name: name,
         quantity: quantity,
         branch: branch,

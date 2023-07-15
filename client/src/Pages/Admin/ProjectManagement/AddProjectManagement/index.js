@@ -585,7 +585,7 @@ const AddProjectManagement = () => {
                     />
                     <Button3D sx={{ maxWidth: "100%" }}>
                       <Link
-                        href={`http://localhost:5000/${pathBanMem}`}
+                        href={`http://phuongnamdts:5000/${pathBanMem}`}
                         target="_blank"
                         download
                         underline="none"
@@ -598,7 +598,7 @@ const AddProjectManagement = () => {
                       <iframe
                         id="iframepdf"
                         style={{ width: "100%" }}
-                        src={`http://localhost:5000/${pathBanMem}`}
+                        src={`http://phuongnamdts:5000/${pathBanMem}`}
                       ></iframe>
                     )}
                   </>
@@ -606,7 +606,7 @@ const AddProjectManagement = () => {
                   <>
                     <Button3D sx={{ maxWidth: "100%" }}>
                       <Link
-                        href={`http://localhost:5000/${pathBanMem}`}
+                        href={`http://phuongnamdts:5000/${pathBanMem}`}
                         target="_blank"
                         download
                         underline="none"
@@ -619,7 +619,7 @@ const AddProjectManagement = () => {
                       <iframe
                         id="iframepdf"
                         style={{ width: "100%" }}
-                        src={`http://localhost:5000/${pathBanMem}`}
+                        src={`http://phuongnamdts:5000/${pathBanMem}`}
                       ></iframe>
                     )}
                   </>
@@ -760,7 +760,7 @@ const AddProjectManagement = () => {
                     />
                     <Button3D sx={{ maxWidth: "100%" }}>
                       <Link
-                        href={`http://localhost:5000/${pathBienBan}`}
+                        href={`http://phuongnamdts:5000/${pathBienBan}`}
                         target="_blank"
                         download
                         underline="none"
@@ -773,7 +773,7 @@ const AddProjectManagement = () => {
                 ) : (
                   <Button3D sx={{ maxWidth: "100%" }}>
                     <Link
-                      href={`http://localhost:5000/${pathBienBan}`}
+                      href={`http://phuongnamdts:5000/${pathBienBan}`}
                       target="_blank"
                       download
                       underline="none"

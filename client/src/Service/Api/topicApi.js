@@ -3,7 +3,7 @@ import axios from "axios";
 const topicApi = {
   getAll: () => {
     try {
-      const response = axios.get("http://localhost:5000/api/chude");
+      const response = axios.get("http://phuongnamdts:5000/api/chude");
       return response;
     } catch (error) {
       //   // console.log(error);
@@ -11,7 +11,7 @@ const topicApi = {
   },
   post: ({ name, note }) => {
     try {
-      const response = axios.post("http://localhost:5000/api/chude", {
+      const response = axios.post("http://phuongnamdts:5000/api/chude", {
         name: name,
         note: note,
       });
@@ -23,7 +23,7 @@ const topicApi = {
   delete: async ({ id }) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/chude/${id}`
+        `http://phuongnamdts:5000/api/chude/${id}`
       );
       return response;
     } catch (error) {
@@ -32,7 +32,7 @@ const topicApi = {
   },
   get: ({ id }) => {
     try {
-      const response = axios.get(`http://localhost:5000/api/chude/${id}`);
+      const response = axios.get(`http://phuongnamdts:5000/api/chude/${id}`);
       return response;
     } catch (error) {
       throw new Error("Lỗi khi tải dữ liệu user");
@@ -40,7 +40,7 @@ const topicApi = {
   },
   put: ({ name, note, id }) => {
     try {
-      const response = axios.put(`http://localhost:5000/api/chude/${id}`, {
+      const response = axios.put(`http://phuongnamdts:5000/api/chude/${id}`, {
         name: name,
         note: note,
       });

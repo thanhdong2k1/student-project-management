@@ -3,7 +3,7 @@ import axios from "axios";
 const facultyApi = {
   getAll: () => {
     try {
-      const response = axios.get("http://localhost:5000/api/khoa");
+      const response = axios.get("http://phuongnamdts:5000/api/khoa");
       return response;
     } catch (error) {
       //   // console.log(error);
@@ -11,7 +11,7 @@ const facultyApi = {
   },
   post: ({ name, dean }) => {
     try {
-      const response = axios.post("http://localhost:5000/api/khoa", {
+      const response = axios.post("http://phuongnamdts:5000/api/khoa", {
         name: name,
         dean: dean,
       });
@@ -23,7 +23,7 @@ const facultyApi = {
   delete: async ({ id }) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/khoa/${id}`
+        `http://phuongnamdts:5000/api/khoa/${id}`
       );
       return response;
     } catch (error) {
@@ -32,7 +32,7 @@ const facultyApi = {
   },
   get: ({ id }) => {
     try {
-      const response = axios.get(`http://localhost:5000/api/khoa/${id}`);
+      const response = axios.get(`http://phuongnamdts:5000/api/khoa/${id}`);
       return response;
     } catch (error) {
       throw new Error("Lỗi khi tải dữ liệu user");
@@ -40,7 +40,7 @@ const facultyApi = {
   },
   put: ({ name, dean, id }) => {
     try {
-      const response = axios.put(`http://localhost:5000/api/khoa/${id}`, {
+      const response = axios.put(`http://phuongnamdts:5000/api/khoa/${id}`, {
         name: name,
         dean: dean,
       });

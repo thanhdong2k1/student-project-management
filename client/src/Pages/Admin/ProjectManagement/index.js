@@ -370,7 +370,7 @@ const ProjectManagement = () => {
   const handleDownload = (event) => {
     event.preventDefault();
     window.open(
-      `http://localhost:5000/${rowDetail.pathSoftCopy}`,
+      `http://phuongnamdts:5000/${rowDetail.pathSoftCopy}`,
       "_blank"
     );
   };
@@ -436,7 +436,7 @@ const ProjectManagement = () => {
               {rowDetail.nameBanMem && (
                 <Button3D sx={{ maxWidth: "100%" }}>
                   <Link
-                    href={`http://localhost:5000/${rowDetail.pathBanMem}`}
+                    href={`http://phuongnamdts:5000/${rowDetail.pathBanMem}`}
                     target="_blank"
                     download
                     underline="none"
@@ -460,7 +460,7 @@ const ProjectManagement = () => {
               {rowDetail.nameBienBan && (
                 <Button3D sx={{ maxWidth: "100%" }}>
                   <Link
-                    href={`http://localhost:5000/${rowDetail.pathBienBan}`}
+                    href={`http://phuongnamdts:5000/${rowDetail.pathBienBan}`}
                     target="_blank"
                     download
                     underline="none"
@@ -472,7 +472,7 @@ const ProjectManagement = () => {
               )}
             </Grid>
             {/* <iframe
-                  src={`http://localhost:5000/${rowDetail.pathMinutes}`}
+                  src={`http://phuongnamdts:5000/${rowDetail.pathMinutes}`}
                   width="100%"
                   height="500px"
                   /> */}

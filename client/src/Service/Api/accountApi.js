@@ -3,7 +3,7 @@ import axios from "axios";
 const accountApi = {
   getAll: () => {
     try {
-      const response = axios.get("http://localhost:5000/api/dangnhap");
+      const response = axios.get("http://phuongnamdts:5000/api/dangnhap");
       return response;
     } catch (error) {
       //   // console.log(error);
@@ -11,7 +11,7 @@ const accountApi = {
   },
   post: ({ name, faculty }) => {
     try {
-      const response = axios.post("http://localhost:5000/api/dangnhap", {
+      const response = axios.post("http://phuongnamdts:5000/api/dangnhap", {
         name: name,
         faculty: faculty,
       });
@@ -23,7 +23,7 @@ const accountApi = {
   delete: async ({ id }) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/dangnhap/${id}`
+        `http://phuongnamdts:5000/api/dangnhap/${id}`
       );
       return response;
     } catch (error) {
@@ -32,7 +32,7 @@ const accountApi = {
   },
   get: ({ id }) => {
     try {
-      const response = axios.get(`http://localhost:5000/api/dangnhap/${id}`);
+      const response = axios.get(`http://phuongnamdts:5000/api/dangnhap/${id}`);
       return response;
     } catch (error) {
       throw new Error("Lỗi khi tải dữ liệu user");
@@ -41,7 +41,7 @@ const accountApi = {
   
   put: ({ email, password, id }) => {
     try {
-      const response = axios.put(`http://localhost:5000/api/dangnhap/${id}`, {
+      const response = axios.put(`http://phuongnamdts:5000/api/dangnhap/${id}`, {
         email: email,
         password: password,
       });

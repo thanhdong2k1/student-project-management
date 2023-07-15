@@ -3,7 +3,7 @@ import axios from "axios";
 const projectManagementApi = {
   getAll: () => {
     try {
-      const response = axios.get("http://localhost:5000/api/doan");
+      const response = axios.get("http://phuongnamdts:5000/api/doan");
       return response;
     } catch (error) {
       //   // console.log(error);
@@ -11,7 +11,7 @@ const projectManagementApi = {
   },
   post: ({ name, topic, student, lecturer, softCopy, point, minutes }) => {
     try {
-      const response = axios.post("http://localhost:5000/api/doan", {
+      const response = axios.post("http://phuongnamdts:5000/api/doan", {
         name: name,
         topic: topic,
         student: student,
@@ -28,7 +28,7 @@ const projectManagementApi = {
   delete: async ({ id }) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/doan/${id}`
+        `http://phuongnamdts:5000/api/doan/${id}`
       );
       return response;
     } catch (error) {
@@ -37,7 +37,7 @@ const projectManagementApi = {
   },
   get: ({ id }) => {
     try {
-      const response = axios.get(`http://localhost:5000/api/doan/${id}`);
+      const response = axios.get(`http://phuongnamdts:5000/api/doan/${id}`);
       return response;
     } catch (error) {
       throw new Error("Lỗi khi tải dữ liệu user");
@@ -45,7 +45,7 @@ const projectManagementApi = {
   },
   put: ({ name, topic, student, lecturer, softCopy, point, minutes, id }) => {
     try {
-      const response = axios.put(`http://localhost:5000/api/doan/${id}`, {
+      const response = axios.put(`http://phuongnamdts:5000/api/doan/${id}`, {
         name: name,
         topic: topic,
         student: student,

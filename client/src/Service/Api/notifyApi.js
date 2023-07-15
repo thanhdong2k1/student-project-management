@@ -3,7 +3,7 @@ import axios from "axios";
 const notifyApi = {
   getAll: () => {
     try {
-      const response = axios.get("http://localhost:5000/api/thongbao");
+      const response = axios.get("http://phuongnamdts:5000/api/thongbao");
       return response;
     } catch (error) {
       //   // console.log(error);
@@ -11,7 +11,7 @@ const notifyApi = {
   },
   post: ({ name, startDay, endDay }) => {
     try {
-      const response = axios.post("http://localhost:5000/api/thongbao", {
+      const response = axios.post("http://phuongnamdts:5000/api/thongbao", {
         name: name,
         startDay: startDay,
         endDay: endDay,
@@ -24,7 +24,7 @@ const notifyApi = {
   delete: async ({ id }) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/thongbao/${id}`
+        `http://phuongnamdts:5000/api/thongbao/${id}`
       );
       return response;
     } catch (error) {
@@ -33,7 +33,7 @@ const notifyApi = {
   },
   get: ({ id }) => {
     try {
-      const response = axios.get(`http://localhost:5000/api/thongbao/${id}`);
+      const response = axios.get(`http://phuongnamdts:5000/api/thongbao/${id}`);
       return response;
     } catch (error) {
       throw new Error("Lỗi khi tải dữ liệu user");
@@ -41,7 +41,7 @@ const notifyApi = {
   },
   put: ({ name, startDay, endDay, id }) => {
     try {
-      const response = axios.put(`http://localhost:5000/api/thongbao/${id}`, {
+      const response = axios.put(`http://phuongnamdts:5000/api/thongbao/${id}`, {
         name: name,
         startDay: startDay,
         endDay: endDay,

@@ -20,7 +20,7 @@ const FileUpload = ({ name, label, idFile, setIdFile, ...field }) => {
   }, []);
   const getFile = (id) => {
     axios
-      .get(`http://localhost:5000/files/${id}`)
+      .get(`http://phuongnamdts:5000/files/${id}`)
       .then((response) => {
         // console.log(response);
         setFilePath(response.data);
@@ -40,7 +40,7 @@ const FileUpload = ({ name, label, idFile, setIdFile, ...field }) => {
     // formData.append("file", file);
     // formData.append("fileName", fileName);
     // try {
-    //   const res = await axios.post("http://localhost:5000/upload", formData);
+    //   const res = await axios.post("http://phuongnamdts:5000/upload", formData);
     //   // console.log(res);
     // } catch (ex) {
     //   // console.log(ex);
@@ -143,7 +143,7 @@ const FileUpload = ({ name, label, idFile, setIdFile, ...field }) => {
         </Tooltip>
       </Button>
       {/* {filePath && (
-        <a href={`http://localhost:5000/${filePath.path}`} download>
+        <a href={`http://phuongnamdts:5000/${filePath.path}`} download>
           {filePath.name}
         </a>
       )} */}
