@@ -1,0 +1,31 @@
+const routes = {
+  admin: {
+    base: "admin",
+    dashboard: "dashboard",
+    lecturer: "lecturer",
+    addLecturer: "add-lecturer",
+    student: "student",
+    addStudent: "add-student",
+    class: "class",
+    addClass: "add-class",
+    course: "course",
+    addCourse: "add-course",
+
+    department: "department",
+    faculty: "faculty",
+    addFaculty: "add-faculty",
+    branch: "branch",
+    addBranch: "add-branch",
+    projectManagement: "project-management",
+    addProjectManagement: "add-project-management",
+    topic: "topic",
+    addTopic: "add-topic",
+    account: "account",
+    addAccount: "addAccount",
+    notify: "notify",
+    addNotify: "addNotify",
+    deadlineManagement: "deadlineManagement",
+    addDeadlineManagement: "addDeadlineManagement",
+  },
+};
+export default routes;
