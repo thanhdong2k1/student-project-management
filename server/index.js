@@ -186,6 +186,7 @@ initAPIDangNhap(app, db);
 // ThongKe
 initAPIThongKe(app, db);
 
-app.listen(5000, () => {
-  console.log("Server is running on port 5000");
+const port = 1142;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
